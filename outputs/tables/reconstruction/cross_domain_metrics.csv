@@ -1,0 +1,7 @@
+Train domain,Test domain,NMJE,PCK,Runs,Result scope
+Drone,Indoor,0.17286692973222115,0.3562091503267974,1,single-seed exploratory; Drone uses distinct metric-bbox provenance
+Drone,Outdoor,0.1492283442599806,0.4311377245508982,1,single-seed exploratory; Drone uses distinct metric-bbox provenance
+Indoor,Drone,0.13986767367797365,0.40963855421686746,1,single-seed exploratory; Drone uses distinct metric-bbox provenance
+Indoor,Outdoor,0.06877609563338094,0.811377245508982,1,single-seed exploratory research result
+Outdoor,Drone,0.13466498136086044,0.45180722891566266,1,single-seed exploratory; Drone uses distinct metric-bbox provenance
+Outdoor,Indoor,0.07985043826092274,0.7320261437908496,1,single-seed exploratory research result

@@ -1,0 +1,4 @@
+Domain,NMJE,PCK@.10,Runs,Result scope
+Drone,0.09621628804385275,0.6566265060240963,1,single-seed exploratory; Drone uses distinct metric-bbox provenance
+Indoor,0.0760578074056833,0.7450980392156863,1,single-seed exploratory research result
+Outdoor,0.06771492765098501,0.811377245508982,1,single-seed exploratory research result

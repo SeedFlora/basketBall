@@ -1,0 +1,11 @@
+path,category,size_mb,required,source
+external/TrackID3x3/ground_truth,annotations,139.071282,True,TrackID3x3 GitHub ground_truth annotations
+data/raw,annotations,0.000197,False,Local raw staging/legacy permitted small artifacts
+external/TrackID3x3,videos,0.0,False,TrackID3x3 RGB video payload (not required; zero when absent)
+data/processed,processed,3.308607,True,"All generated processed datasets, including TrackID3x3 static/smoke/temporal variants"
+outputs,checkpoints,24.101907,False,Generated model checkpoint files only
+outputs/figures,figures,63.006319,False,Generated figures
+outputs,temporary,9.376848,False,"Reports, tables, and logs (checkpoint/figure bytes excluded)"
+external/TrackID3x3/.git,temporary,38.25286,False,Git checkout metadata/source overhead (reported separately)
+external/TrackID3x3,temporary,0.757293,False,Checkout source/license/court-image overhead (ground_truth/.git/videos excluded)
+data/interim,temporary,1.360316,False,Interim and legacy software-fixture data

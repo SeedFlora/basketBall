@@ -1,0 +1,6 @@
+# LEGACY/DISABLED: inherits the quarantined synthetic Henu smoke config.
+extends: smoke_synthetic.yaml
+project:
+  output_dir: outputs/synthetic_ablation
+augmentation:
+  enabled: false

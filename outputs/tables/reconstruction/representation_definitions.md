@@ -1,0 +1,7 @@
+| representation | definition | inverse_for_metrics | executed_evidence |
+| --- | --- | --- | --- |
+| raw | Source pixel x/y coordinates; missing inputs are zero-filled after masking. | Identity; metrics are computed in source pixels. | True |
+| bbox_normalized | Per-frame (x-x0)/w and (y-y0)/h; official MOT boxes are used directly, while pose-tight fallback frames use a post-mask observed-joint box. | Multiply by the exact leakage-safe input-transform width/height and add its origin; use the separately stored source bbox only for metric normalization. | True |
+| root_centered | Coordinates centred using an observed-only anatomical/bbox fallback centre. | Add the stored observed-only centre. | True |
+| scale_normalized | Observed-only centred coordinates divided by an observed-only scale. | Multiply by the stored scale and add the stored centre. | True |
+| normalized_angles | Scale-normalized coordinates with supported observed-joint angles as auxiliary context. | Invert only predicted x/y coordinates; angles are context, not targets. | True |

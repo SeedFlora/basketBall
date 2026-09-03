@@ -1,0 +1,60 @@
+dataset: TrackID3x3
+schema: TrackID3x3.pose_instance.v1
+coordinate_order: [x, y]
+source_pose_shape: [10, 2]
+
+source_order_evidence:
+  repository_commit: 9822a3dde59fc80fbb5eaacd443e79e8b059d94e
+  official_repository: https://github.com/open-starlab/TrackID3x3
+  paper: https://arxiv.org/html/2503.18282v2
+  basis:
+    - The paper enumerates head, shoulders, elbows, wrists, ankles, and center.
+    - The paper defines center as the midpoint of the left and right hips.
+    - The pose-baseline protocol selects ten corresponding points from COCO17 and uses nose for head.
+    - Every inspected source annotation stores exactly ten ordered x/y pairs; no name field exists in JSON.
+
+joints:
+  - {source_index: 0, name: head, coco17_source: nose, coco17_index: 0}
+  - {source_index: 1, name: left_shoulder, coco17_source: left_shoulder, coco17_index: 5}
+  - {source_index: 2, name: right_shoulder, coco17_source: right_shoulder, coco17_index: 6}
+  - {source_index: 3, name: left_elbow, coco17_source: left_elbow, coco17_index: 7}
+  - {source_index: 4, name: right_elbow, coco17_source: right_elbow, coco17_index: 8}
+  - {source_index: 5, name: left_wrist, coco17_source: left_wrist, coco17_index: 9}
+  - {source_index: 6, name: right_wrist, coco17_source: right_wrist, coco17_index: 10}
+  - source_index: 7
+    name: center
+    coco17_source: midpoint_left_hip_right_hip
+    coco17_indices: [11, 12]
+    derived: true
+  - {source_index: 8, name: left_ankle, coco17_source: left_ankle, coco17_index: 15}
+  - {source_index: 9, name: right_ankle, coco17_source: right_ankle, coco17_index: 16}
+
+edges_index_pairs:
+  - [0, 1]
+  - [0, 2]
+  - [1, 2]
+  - [1, 3]
+  - [3, 5]
+  - [2, 4]
+  - [4, 6]
+  - [1, 7]
+  - [2, 7]
+  - [7, 8]
+  - [7, 9]
+
+angle_triplets_first_vertex_third:
+  left_shoulder: [3, 1, 7]
+  right_shoulder: [4, 2, 7]
+  left_elbow: [1, 3, 5]
+  right_elbow: [2, 4, 6]
+  shoulder_center: [1, 7, 2]
+
+missing_rule:
+  invalid_when: non_finite_or_exact_xy_zero_sentinel
+  mask_authoritative: true
+
+bbox_policy:
+  Indoor: official_mot_xywh_independent
+  Outdoor: official_mot_xywh_independent
+  Drone: pose_tight_fallback_full_pose_metric_only
+  runtime_masking_rule: recompute_Drone_bbox_transform_from_observed_joints_only

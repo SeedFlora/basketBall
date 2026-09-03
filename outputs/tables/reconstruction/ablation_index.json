@@ -1,0 +1,394 @@
+{
+  "artifact_type": "reconstruction_ablation_index",
+  "comparison_protocols": {
+    "cross_domain": {
+      "domain_aggregation": "per-domain cell; no domain pooling",
+      "levels": [
+        "Drone",
+        "Indoor",
+        "Outdoor"
+      ],
+      "selected_controls": {
+        "data_percent": 100.0,
+        "mask_ratio": 0.2,
+        "model": "mlp",
+        "representation": "bbox_normalized",
+        "seed": 42,
+        "sequence_length": 1,
+        "smoke": false,
+        "synthetic": false
+      },
+      "selection_policy": "Domain-trained bbox-normalized MLP at T=1, 20% masking, 100% data, and seed 42; require all three train and test domains before reporting cross-domain cells.",
+      "source_artifacts": [
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\cross_domain\\domain_mlp_bbox_drone_mask20_seed42__train_drone__test_indoor\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\cross_domain\\domain_mlp_bbox_drone_mask20_seed42__train_drone__test_outdoor\\mask_20\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_drone_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_indoor_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_indoor_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_indoor_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_outdoor_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_outdoor_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_outdoor_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json"
+      ],
+      "status": "generated from executed evidence",
+      "test_domains": [
+        "Drone",
+        "Indoor",
+        "Outdoor"
+      ]
+    },
+    "data_efficiency": {
+      "domain_aggregation": "equal-domain macro mean after within-domain run averaging",
+      "levels": [
+        100.0,
+        25.0,
+        50.0
+      ],
+      "selected_controls": {
+        "mask_ratio": 0.2,
+        "model": "mlp",
+        "representation": "normalized_angles",
+        "seed": 42,
+        "sequence_length": 1,
+        "smoke": false,
+        "synthetic": false,
+        "train_domain": "all"
+      },
+      "selection_policy": "Pooled-domain normalized+angles MLP at T=1, 20% masking, and seed 42; compare 25%, 50%, and 100% whole-group training data across all three test domains.",
+      "source_artifacts": [
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\dataeff_mlp_angles_all_data25_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\dataeff_mlp_angles_all_data25_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\dataeff_mlp_angles_all_data25_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\dataeff_mlp_angles_all_data50_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\dataeff_mlp_angles_all_data50_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\dataeff_mlp_angles_all_data50_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json"
+      ],
+      "status": "generated from executed evidence",
+      "test_domains": [
+        "Drone",
+        "Indoor",
+        "Outdoor"
+      ]
+    },
+    "domain": {
+      "domain_aggregation": "per-domain cell; no domain pooling",
+      "levels": [
+        "Drone",
+        "Indoor",
+        "Outdoor"
+      ],
+      "selected_controls": {
+        "data_percent": 100.0,
+        "mask_ratio": 0.2,
+        "model": "mlp",
+        "representation": "normalized_angles",
+        "seed": 42,
+        "sequence_length": 1,
+        "smoke": false,
+        "synthetic": false,
+        "train_domain": "all"
+      },
+      "selection_policy": "Pooled-domain normalized+angles MLP at T=1, 20% masking, 100% data, and seed 42; report each test domain separately.",
+      "source_artifacts": [
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json"
+      ],
+      "status": "generated from executed evidence",
+      "test_domains": [
+        "Drone",
+        "Indoor",
+        "Outdoor"
+      ]
+    },
+    "missingness": {
+      "domain_aggregation": "equal-domain macro mean after within-domain run averaging",
+      "levels": [
+        0.1,
+        0.2,
+        0.3,
+        0.4
+      ],
+      "selected_controls": {
+        "data_percent": 100.0,
+        "model": "mlp",
+        "representation": "normalized_angles",
+        "seed": 42,
+        "sequence_length": 1,
+        "smoke": false,
+        "synthetic": false,
+        "train_domain": "all"
+      },
+      "selection_policy": "Pooled-domain normalized+angles MLP at T=1, 100% data, and seed 42; vary only 10%, 20%, 30%, and 40% masking and macro-average all three test domains.",
+      "source_artifacts": [
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_10\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_10\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_10\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_30\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_30\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_30\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_40\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_40\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_40\\outdoor\\metrics.json"
+      ],
+      "status": "generated from executed evidence",
+      "test_domains": [
+        "Drone",
+        "Indoor",
+        "Outdoor"
+      ]
+    },
+    "model": {
+      "domain_aggregation": "equal-domain macro mean after within-domain run averaging",
+      "levels": [
+        "geometric_baseline",
+        "graph",
+        "mlp",
+        "tcn"
+      ],
+      "selected_controls": {
+        "data_percent": 100.0,
+        "mask_ratio": 0.2,
+        "representation": "bbox_normalized",
+        "seed": 42,
+        "sequence_length": 16,
+        "smoke": false,
+        "synthetic": false,
+        "train_domain": [
+          "all",
+          "not_applicable"
+        ]
+      },
+      "selection_policy": "T=16 bbox-normalized comparison of the geometric baseline, MLP, reliable-window TCN, and sub-1M-parameter graph model at 20% masking, 100% data, and seed 42; macro-average the matched Indoor and Outdoor domains.",
+      "source_artifacts": [
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all_t16\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all_t16\\mask_20\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_graph_bbox_all_t16_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_graph_bbox_all_t16_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_t16_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_t16_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_tcn_bbox_all_t16_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_tcn_bbox_all_t16_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json"
+      ],
+      "status": "generated from executed evidence",
+      "test_domains": [
+        "Indoor",
+        "Outdoor"
+      ]
+    },
+    "normalization_shift": {
+      "domain_aggregation": "equal-domain macro mean after within-domain run averaging",
+      "levels": [
+        "bbox_normalized",
+        "raw",
+        "scale_normalized"
+      ],
+      "selected_controls": {
+        "data_percent": 100.0,
+        "mask_ratio": 0.2,
+        "model": "mlp",
+        "seed": 42,
+        "sequence_length": 1,
+        "smoke": false,
+        "synthetic": false,
+        "train_domain": "Indoor"
+      },
+      "selection_policy": "Single-seed Indoor-trained to Outdoor-tested MLP normalization hypothesis; raw, bbox-normalized, and scale-normalized representations at T=1, 20% masking, 100% training data, and seed 42.",
+      "source_artifacts": [
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_indoor_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\shift_mlp_raw_indoor_to_outdoor_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\shift_mlp_scale_indoor_to_outdoor_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json"
+      ],
+      "status": "generated from executed evidence",
+      "test_domains": [
+        "Outdoor"
+      ]
+    },
+    "representation": {
+      "domain_aggregation": "equal-domain macro mean after within-domain run averaging",
+      "levels": [
+        "bbox_normalized",
+        "normalized_angles",
+        "raw",
+        "root_centered",
+        "scale_normalized"
+      ],
+      "selected_controls": {
+        "data_percent": 100.0,
+        "mask_ratio": 0.2,
+        "model": "mlp",
+        "seed": 42,
+        "sequence_length": 1,
+        "smoke": false,
+        "synthetic": false,
+        "train_domain": "all"
+      },
+      "selection_policy": "Pooled-domain MLP comparison of all five declared representations at T=1, 20% masking, 100% data, and seed 42; macro-average the same Indoor, Outdoor, and Drone rows.",
+      "source_artifacts": [
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_raw_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_raw_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_raw_all_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_root_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_root_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_root_all_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_scale_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_scale_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+        "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_scale_all_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json"
+      ],
+      "status": "generated from executed evidence",
+      "test_domains": [
+        "Drone",
+        "Indoor",
+        "Outdoor"
+      ]
+    }
+  },
+  "include_smoke": false,
+  "include_synthetic": false,
+  "legacy_non_reconstruction_artifacts_excluded": 18,
+  "not_generated": [],
+  "pre_observed_transform_drone_artifacts_excluded": 0,
+  "records_included": 77,
+  "rgb_overlay": "NOT GENERATED: no source RGB frames are present in the annotation-only acquisition; remote media size was not assumed.",
+  "sources": [
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\cross_domain\\domain_mlp_bbox_drone_mask20_seed42__train_drone__test_indoor\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\cross_domain\\domain_mlp_bbox_drone_mask20_seed42__train_drone__test_outdoor\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all\\mask_10\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all\\mask_10\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all\\mask_10\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all\\mask_20\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all\\mask_30\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all\\mask_30\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all\\mask_30\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all\\mask_40\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all\\mask_40\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all\\mask_40\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all_t16\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_geometric_all_t16\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_graph_bbox_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_graph_bbox_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_graph_bbox_all_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_graph_bbox_all_t16_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_graph_bbox_all_t16_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_10\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_10\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_10\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_30\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_30\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_30\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_40\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_40\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_angles_all_mask20_seed42_eval\\mask_40\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_10\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_10\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_10\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_30\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_30\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_30\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_40\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_40\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_mask20_seed42_eval\\mask_40\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_t16_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_bbox_all_t16_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_raw_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_raw_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_raw_all_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_root_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_root_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_root_all_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_scale_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_scale_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_mlp_scale_all_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_tcn_bbox_all_t16_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\core_tcn_bbox_all_t16_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\dataeff_mlp_angles_all_data25_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\dataeff_mlp_angles_all_data25_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\dataeff_mlp_angles_all_data25_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\dataeff_mlp_angles_all_data50_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\dataeff_mlp_angles_all_data50_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\dataeff_mlp_angles_all_data50_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_drone_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_indoor_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_indoor_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_indoor_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_outdoor_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_outdoor_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\domain_mlp_bbox_outdoor_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\shift_mlp_raw_indoor_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\shift_mlp_raw_indoor_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\shift_mlp_raw_indoor_to_outdoor_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\shift_mlp_scale_indoor_all_mask20_seed42_eval\\mask_20\\drone\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\shift_mlp_scale_indoor_all_mask20_seed42_eval\\mask_20\\indoor\\metrics.json",
+    "G:\\basket\\basketball-pose-research\\outputs\\logs\\evaluations\\shift_mlp_scale_indoor_to_outdoor_mask20_seed42_eval\\mask_20\\outdoor\\metrics.json"
+  ],
+  "synthetic_label": "software validation only / NOT research results",
+  "tables": {
+    "cross_domain_metrics": {
+      "csv": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\cross_domain_metrics.csv",
+      "markdown": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\cross_domain_metrics.md",
+      "rows": 6
+    },
+    "dataset_subset_statistics": {
+      "csv": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\dataset_subset_statistics.csv",
+      "markdown": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\dataset_subset_statistics.md",
+      "rows": 3
+    },
+    "missing_keypoints": {
+      "csv": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\missing_keypoints.csv",
+      "markdown": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\missing_keypoints.md",
+      "rows": 4
+    },
+    "model_parameters_compute": {
+      "csv": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\model_parameters_compute.csv",
+      "markdown": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\model_parameters_compute.md",
+      "rows": 4
+    },
+    "natural_missingness_by_joint": {
+      "csv": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\natural_missingness_by_joint.csv",
+      "markdown": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\natural_missingness_by_joint.md",
+      "rows": 30
+    },
+    "normalization_shift": {
+      "csv": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\normalization_shift.csv",
+      "markdown": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\normalization_shift.md",
+      "rows": 3
+    },
+    "representation": {
+      "csv": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\representation.csv",
+      "markdown": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\representation.md",
+      "rows": 5
+    },
+    "representation_definitions": {
+      "csv": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\representation_definitions.csv",
+      "markdown": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\representation_definitions.md",
+      "rows": 5
+    },
+    "within_domain_metrics": {
+      "csv": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\within_domain_metrics.csv",
+      "markdown": "G:\\basket\\basketball-pose-research\\outputs\\tables\\reconstruction\\within_domain_metrics.md",
+      "rows": 3
+    }
+  },
+  "task": "keypoint_reconstruction",
+  "title": "Cross-Domain Robustness of Lightweight Skeleton Representations for 3x3 Basketball Player Pose Analysis"
+}

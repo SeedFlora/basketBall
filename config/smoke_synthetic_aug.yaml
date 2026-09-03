@@ -1,0 +1,9 @@
+# LEGACY/DISABLED: inherits the quarantined synthetic Henu smoke config.
+extends: smoke_synthetic.yaml
+augmentation:
+  enabled: true
+  jitter_std: 0.005
+  scale_range: [0.95, 1.05]
+  translation_std: 0.01
+  frame_dropout: 0.05
+  joint_dropout: 0.02

@@ -1,0 +1,77 @@
+project:
+  seed: 42
+  output_dir: outputs
+
+data:
+  dataset: TrackID3x3
+  source_root: external/TrackID3x3
+  processed_dir: data/processed/trackid3x3
+  subset_manifest: data/processed/trackid3x3/subset_manifest.csv
+  sequence_length: 1
+  frame_step: 3
+  split_ratios: [0.70, 0.15, 0.15]
+  targets:
+    Indoor: 1000
+    Outdoor: 1000
+    Drone: 500
+  annotation_only: true
+  rgb_required: false
+  # Retained only so legacy synthetic software-fixture configs still resolve.
+  raw_dir: data/raw
+  interim_dir: data/interim
+  coordinate_dims: 2
+  confidence_threshold: 0.0
+  joint_layout: auto
+
+reconstruction:
+  model: mlp
+  representation: bbox_normalized
+  default_mask_rate: 0.20
+  domain: all
+  train_fraction: 1.0
+  mask_seed: 42
+  runtime_observed_only_transforms: true
+
+features:
+  representation: bbox_normalized
+  representations:
+    - raw
+    - bbox_normalized
+    - root_centered
+    - scale_normalized
+    - normalized_angles
+  joint_mapping: config/joint_mapping.yaml
+
+augmentation:
+  enabled: false
+  jitter_std: 0.005
+  scale_range: [0.95, 1.05]
+  translation_std: 0.01
+  frame_dropout: 0.05
+  joint_dropout: 0.02
+
+model:
+  name: mlp
+  hidden_dim: 96
+  num_layers: 2
+  dropout: 0.25
+  bidirectional: true
+
+training:
+  epochs: 30
+  batch_size: 128
+  learning_rate: 0.001
+  optimizer: AdamW
+  weight_decay: 0.0001
+  early_stopping_patience: 8
+  num_workers: 0
+  mixed_precision: true
+
+evaluation:
+  missing_rates: [0.1, 0.2, 0.3, 0.4]
+  missing_strategy: deterministic_joint_mask
+
+storage:
+  max_processed_mb: 600
+  minimum_free_mb: 1024
+  manifest: outputs/reports/storage_manifest.csv

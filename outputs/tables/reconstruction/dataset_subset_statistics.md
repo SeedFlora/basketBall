@@ -1,0 +1,5 @@
+| Domain | Videos | Frames | Player instances | Player tracks | Pose instances | Storage |
+| --- | --- | --- | --- | --- | --- | --- |
+| Indoor | 13 | 604 | 1000 | 78 | 1000 | 26.88 MiB |
+| Outdoor | 1 | 719 | 1000 | 6 | 1000 | 84.62 MiB |
+| Drone | unavailable / not linkable | 164 | 500 | 6 | 500 | 21.13 MiB |

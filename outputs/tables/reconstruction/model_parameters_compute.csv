@@ -1,0 +1,5 @@
+Model,Parameters,Checkpoint MB,NMJE,PCK@.10,Domains averaged,Result scope
+geometric_baseline,0.0,0.0,0.15621288356355617,0.41587752525252525,2,single-seed exploratory research result
+graph,82226.0,0.344728,0.08023029045230984,0.7250631313131313,2,single-seed exploratory research result
+mlp,26996.0,0.117445,0.07659630968445458,0.7555239898989898,2,single-seed exploratory research result
+tcn,117572.0,0.487241,0.07374650312928838,0.7686237373737375,2,single-seed exploratory research result

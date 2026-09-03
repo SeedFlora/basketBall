@@ -1,0 +1,8 @@
+extends: default.yaml
+
+data:
+  dataset: TrackID3x3
+  source_root: external/TrackID3x3
+  processed_dir: data/processed/trackid3x3
+  sequence_length: 1
+  frame_step: 3

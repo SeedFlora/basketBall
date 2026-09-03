@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use the dataset, cite the TrackID3x3 paper and follow its CC BY 4.0 dataset license."
+title: "Cross-Domain Robustness of Lightweight Skeleton Representations for 3x3 Basketball Player Pose Analysis"
+type: software
+version: 0.2.0
+date-released: 2026-09-03
+references:
+  - type: article
+    title: "TrackID3x3: A Dataset and Algorithm for Multi-Player Tracking with Identification and Pose Estimation in 3x3 Basketball Full-court Videos"
+    authors:
+      - family-names: Yamada
+        given-names: Kazuhiro
+      - family-names: Yin
+        given-names: Li
+      - family-names: Hu
+        given-names: Qingrui
+      - family-names: Ding
+        given-names: Ning
+      - family-names: Iwashita
+        given-names: Shunsuke
+      - family-names: Ichikawa
+        given-names: Jun
+      - family-names: Kotani
+        given-names: Kiwamu
+      - family-names: Yeung
+        given-names: Calvin
+      - family-names: Fujii
+        given-names: Keisuke
+    year: 2025
+    doi: "10.1145/3728423.3759400"

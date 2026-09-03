@@ -1,0 +1,15 @@
+# LEGACY/DISABLED: Henu action-classification sample config; not TrackID3x3.
+extends: default.yaml
+legacy_workflow:
+  status: disabled
+  dataset_family: Henu_MultiSubjects_action_classification
+  trackid3x3_compatible: false
+  research_results: false
+  replacement_config: config/trackid3x3.yaml
+data:
+  dataset: LEGACY_HENU_DISABLED
+  processed_dir: data/processed/LEGACY_HENU_CONFIG_DISABLED
+  num_subjects: 500
+  sequence_length: 32
+features:
+  representation: legacy_henu_classification_disabled

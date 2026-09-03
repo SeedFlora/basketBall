@@ -1,0 +1,25 @@
+# LEGACY/DISABLED: fabricated Henu/MMAAction classification smoke config.
+extends: default.yaml
+legacy_workflow:
+  status: disabled
+  dataset_family: fabricated_Henu_MMAAction_classification
+  trackid3x3_compatible: false
+  research_results: false
+  replacement_config: config/trackid3x3.yaml
+project:
+  seed: 42
+data:
+  dataset: LEGACY_HENU_SYNTHETIC_DISABLED
+  processed_dir: data/processed/LEGACY_HENU_CONFIG_DISABLED
+  num_subjects: 18
+  sequence_length: 16
+features:
+  representation: legacy_henu_classification_disabled
+augmentation:
+  enabled: false
+training:
+  epochs: 2
+  batch_size: 8
+  early_stopping_patience: 2
+  num_workers: 0
+  mixed_precision: true
