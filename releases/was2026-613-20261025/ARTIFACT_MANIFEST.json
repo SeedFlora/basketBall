@@ -1,0 +1,343 @@
+{
+  "release": "was2026-613-20261025",
+  "source_base_commit": "24de979dedf11e94829ae8cb702680c2f338dc82",
+  "scope": "3scripts,32CSV+32Markdown executed multi-seed tables; no rawdata/checkpoints/per-pose predictions.",
+  "artifact_count": 67,
+  "files": [
+    {
+      "path": "scripts/run_multiseed.py",
+      "bytes": 14504,
+      "sha256": "5be6502bdab6c5e2d5676c7ca2d81147cbfb36be51007a0f1194253528a6d961"
+    },
+    {
+      "path": "scripts/aggregate_multiseed.py",
+      "bytes": 42317,
+      "sha256": "eb68c43c3a1b56715f3e165e083fd0d271fd97f01e58b4e725f50d21f5eea39b"
+    },
+    {
+      "path": "scripts/build_rotation_folds.py",
+      "bytes": 4486,
+      "sha256": "c144c2525dc5ab4ddb74e7e54fd4707946a7e2c2d304a69750f0f0fd17207b4d"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_data_efficiency.csv",
+      "bytes": 639,
+      "sha256": "b0a25a4bcaeb69cb88f5da6414d9f1b4dbe6ed538d56a863d48f281e501b0018"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_data_efficiency_common.csv",
+      "bytes": 636,
+      "sha256": "62990925c665efb05a2d2d226e3d9037b32a7e1db6461136b2fec19271443ec4"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_denominator.csv",
+      "bytes": 285,
+      "sha256": "963b318d184ea95552153b987ec1c17578bea4153dc9181f5b22d10311e2ace7"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_denominator_common.csv",
+      "bytes": 285,
+      "sha256": "963b318d184ea95552153b987ec1c17578bea4153dc9181f5b22d10311e2ace7"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_missingness.csv",
+      "bytes": 2381,
+      "sha256": "41e1b170a12e5d435c0f94a3d2510f603b7edbee8298946122c0d03cfdffd83d"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_missingness_common.csv",
+      "bytes": 2394,
+      "sha256": "8bbab3135583970814ae8fd250278fce8ffe0e08dd6125f102f82948112f2ab9"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_models.csv",
+      "bytes": 1693,
+      "sha256": "151e71dde594d260a8082082a07d7d9a6d6eba5f71e14972c9826fc2724f8a76"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_models_common.csv",
+      "bytes": 1699,
+      "sha256": "56491b62b9c5e6558e6d78eece54176386ac05767f95ede4aa594786ca39728f"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_normalization_shift.csv",
+      "bytes": 636,
+      "sha256": "a40e5ec8d80aefae01e13f0e817043b56a1ce44f0c5107b1cb86e5a3b60744dd"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_normalization_shift_common.csv",
+      "bytes": 639,
+      "sha256": "f1b3e6b8389dbdc9e51e4e5f127cb2c740a1341c1d7dff9d935237830208752a"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_paired_tests.csv",
+      "bytes": 27919,
+      "sha256": "3fac40aaaf385ff879fb1800bfc0acf69b66b8fbdafdb81ce85da0fc14994a2f"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_paired_tests_common.csv",
+      "bytes": 27903,
+      "sha256": "133b0b3541373b8d26c6d102c5ba8f28fec16f5df6acb5c0ff922bf46de8b621"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_penalty_spread.csv",
+      "bytes": 9522,
+      "sha256": "8de9c48471a29179a196f9e0cc8f168f7d06655bd6b9958d9cfcb69046346a4c"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_penalty_spread_common.csv",
+      "bytes": 9522,
+      "sha256": "8de9c48471a29179a196f9e0cc8f168f7d06655bd6b9958d9cfcb69046346a4c"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_per_joint.csv",
+      "bytes": 597,
+      "sha256": "30ce828dc160082aeb832258a15a65c7aa7ad176e635de2e7b3a8a8d303a548e"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_per_joint_common.csv",
+      "bytes": 594,
+      "sha256": "005c917928aee3cb7248f6aa546346bab6c1988139238f4ba22e532768e760f6"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_representation.csv",
+      "bytes": 1108,
+      "sha256": "fd5644ad88f64dca90ffd7ec5039cbd2ec999500b1fba91aa27d4a652e289885"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_representation_by_domain.csv",
+      "bytes": 3191,
+      "sha256": "ab6a72c49228e2a69d791c0c43abd9c163d9527bb10756c0fe5c7256d6096a8b"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_representation_by_domain_common.csv",
+      "bytes": 3184,
+      "sha256": "22b9adb69856f1fb4210ad6db5f6584b91ccb501f1b8942b7d9de189063e199c"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_representation_common.csv",
+      "bytes": 1112,
+      "sha256": "e4cc2dff7721ac2818efbc501677588e82656712932053ed3c1e382eb7f41056"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_runs.csv",
+      "bytes": 83961,
+      "sha256": "9dea98bbfe063d228eaf0a5987bb7977eea224ea7a54fba58beb2af44b4b73bb"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_runs_common.csv",
+      "bytes": 83868,
+      "sha256": "7509c752d0692ec547f992823e80459434fbcc1481971469efeff3396d5ee97f"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_split_footage.csv",
+      "bytes": 103,
+      "sha256": "2b6ec983d717fff8f9bf767e560610bbb1191eda8fd43115c57f179e8d7cf26e"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_split_footage_common.csv",
+      "bytes": 103,
+      "sha256": "2b6ec983d717fff8f9bf767e560610bbb1191eda8fd43115c57f179e8d7cf26e"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_strata.csv",
+      "bytes": 985,
+      "sha256": "769bc6a350acf802d72639cc03f7e3e0e22370c56dbeec55e50cd2a8cf2c4aaa"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_strata_common.csv",
+      "bytes": 984,
+      "sha256": "f22a250dba1fa5ffde1f4c27d718ad548c0a70f4e69d03b663e84478a35dbf08"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_strata_within_domain.csv",
+      "bytes": 991,
+      "sha256": "55d0822bf200f72bf0623b898bb0ed03c9557703fffb8ad0b59e8c3b048209f7"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_strata_within_domain_common.csv",
+      "bytes": 990,
+      "sha256": "996c3672fed2e07d4e19d00238ce9874c2620257ea907769a9a424ff0793873c"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_training_budget.csv",
+      "bytes": 93,
+      "sha256": "2d27b96bbd5898b24d03f43aa5b71f05ecb19d50a751ea716850cb0c5579408f"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_training_budget_common.csv",
+      "bytes": 93,
+      "sha256": "2d27b96bbd5898b24d03f43aa5b71f05ecb19d50a751ea716850cb0c5579408f"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_transfer.csv",
+      "bytes": 13860,
+      "sha256": "d02060cd5ee06d0f7907e627b97f55d658f50b16fcc6de218a4510034209ad24"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_transfer_common.csv",
+      "bytes": 13860,
+      "sha256": "d02060cd5ee06d0f7907e627b97f55d658f50b16fcc6de218a4510034209ad24"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_data_efficiency.md",
+      "bytes": 453,
+      "sha256": "d4d66443ba47072f681b5cd6df55a6815334b9049c6816f07a6a35ffd271999b"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_data_efficiency_common.md",
+      "bytes": 453,
+      "sha256": "ead2e3a58c0420073f84159ad88aa3a99d4ba6e82acc6c75ced4515995ab9ed1"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_denominator.md",
+      "bytes": 293,
+      "sha256": "3ca3af24196249ca0e6587547308ff799022d097ad16c26234ab547560805994"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_denominator_common.md",
+      "bytes": 293,
+      "sha256": "3ca3af24196249ca0e6587547308ff799022d097ad16c26234ab547560805994"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_missingness.md",
+      "bytes": 1487,
+      "sha256": "edfb800e019e01c18c2f58410d3dcd60293a7ab6221871858187f2762bc7b50b"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_missingness_common.md",
+      "bytes": 1487,
+      "sha256": "450b419b97f3119c0a5eb2ba330eb3e691faf07a81feacd0af1e48f7f3893236"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_models.md",
+      "bytes": 1152,
+      "sha256": "c8e567a19582bc5c7253d90494d9852146adc1a5210567538920a884dbc5f329"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_models_common.md",
+      "bytes": 1152,
+      "sha256": "ea92071fef1e13e26221e59b457f90240af467b15d2efc96a8f7670258222b3a"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_normalization_shift.md",
+      "bytes": 575,
+      "sha256": "f07ac249b1fec584149ff289708fe41c2a768a009bad977f59a73a043ca1887f"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_normalization_shift_common.md",
+      "bytes": 576,
+      "sha256": "994eeea36dec6b48146833cc82e1d58552aeea22df22e96dd25e72eb4b66b5f6"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_paired_tests.md",
+      "bytes": 20349,
+      "sha256": "9927c818e22a7f9c4d0814b2d26d8f37f766e4df433d4f1285f09f9e6eb5286c"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_paired_tests_common.md",
+      "bytes": 20350,
+      "sha256": "fccc646e3496f152084da7ef43b9efa74d24e819182a325550a562db3bfcf0da"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_penalty_spread.md",
+      "bytes": 8774,
+      "sha256": "7f90d8667acc8249d411296618e8d6ffc6ac31387615c809ddafd71375deedb6"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_penalty_spread_common.md",
+      "bytes": 8774,
+      "sha256": "7f90d8667acc8249d411296618e8d6ffc6ac31387615c809ddafd71375deedb6"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_per_joint.md",
+      "bytes": 452,
+      "sha256": "f5894860e42c419a36ba77339542b125028f5198a5f68cf8b7f2b0e0097483a0"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_per_joint_common.md",
+      "bytes": 452,
+      "sha256": "6495e065599ac03d34df98e437485e9580e7e7082f3277e30e9148c4b3024b4f"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_representation.md",
+      "bytes": 775,
+      "sha256": "eea6eaf370a801847785445873647e5378f80ffcd206df46f1bb06846ef0302f"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_representation_by_domain.md",
+      "bytes": 2104,
+      "sha256": "8bb5e01419f5a74ecbf5ff445feab71a3b41dec4d4dbb686917d3258982aa641"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_representation_by_domain_common.md",
+      "bytes": 2105,
+      "sha256": "933d48d23454f82600d89cec16e018aa54eb0f9f63e9a47e532bd44e90b6b7c1"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_representation_common.md",
+      "bytes": 776,
+      "sha256": "3068728697784f83d38661caccfd74104d5b05ed2512027d06d604d637fb942b"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_runs.md",
+      "bytes": 67406,
+      "sha256": "4460c825e118239d13074b6e4d32ba4c68b3abcd7ec7c039b5759c4f65f8962f"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_runs_common.md",
+      "bytes": 67416,
+      "sha256": "b5efffe5b536863b8f33c45c1bff7b3fd0468756cc79101b0986b7f3a19e1f6f"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_split_footage.md",
+      "bytes": 150,
+      "sha256": "f495ee11482f4e06f43760b6ec41d3d8048385652b1beed25f00a68f01a30985"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_split_footage_common.md",
+      "bytes": 150,
+      "sha256": "f495ee11482f4e06f43760b6ec41d3d8048385652b1beed25f00a68f01a30985"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_strata.md",
+      "bytes": 899,
+      "sha256": "12dbe3241b21f6bcc6dbe19f8a8211338919057f611aaaa438f7c02811a965ad"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_strata_common.md",
+      "bytes": 899,
+      "sha256": "ad079882b6cbcccc7532d7a8173096b600f034147febcadf7e4bafd930af6c87"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_strata_within_domain.md",
+      "bytes": 971,
+      "sha256": "2ddf698d38c7b4f31a4684ec02fabe5b66606b44948a1e7b4398148f5c540e92"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_strata_within_domain_common.md",
+      "bytes": 971,
+      "sha256": "d1c056bd24de63695f79b97c43b47591ef8320c59767b96fb4c88b99138504e2"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_training_budget.md",
+      "bytes": 140,
+      "sha256": "c934aa902a899f453b04966553bfcb278d8e8d04cd362d4e2cc3361a66a1bd6c"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_training_budget_common.md",
+      "bytes": 140,
+      "sha256": "c934aa902a899f453b04966553bfcb278d8e8d04cd362d4e2cc3361a66a1bd6c"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_transfer.md",
+      "bytes": 9339,
+      "sha256": "1c89dd6b412e0f6186ad0d149fca1165abf639bb189e64f600490e27a883a2c3"
+    },
+    {
+      "path": "outputs/tables/reconstruction/multiseed_transfer_common.md",
+      "bytes": 9339,
+      "sha256": "1c89dd6b412e0f6186ad0d149fca1165abf639bb189e64f600490e27a883a2c3"
+    }
+  ]
+}

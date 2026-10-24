@@ -1,0 +1,2 @@
+training_runs,best_epoch_at_least_28,best_epoch_30,early_stopped,epoch_cap
+156,130,63,2,30

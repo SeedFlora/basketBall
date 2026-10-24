@@ -1,0 +1,4 @@
+test_domain,median_source_to_pose_extent_diagonal,median_observed_span_x_of_input_box,median_observed_span_y_of_input_box,seeds
+Indoor,1.3256712002120312,0.6899921545066284,0.7343938932869594,5
+Outdoor,1.3235642689270304,0.6613024505543391,0.7483018541346741,5
+Drone,1.0,1.0,1.0,5

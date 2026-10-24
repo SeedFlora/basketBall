@@ -1,0 +1,73 @@
+train_domain,test_domain,metric,replicates,penalty_min_pct,penalty_max_pct,penalty_sd_pct,replicates_with_positive_penalty,representation,source_family
+Indoor,Outdoor,nmje,5,1.5671108560661573,15.616107815742149,5.915063454770035,5,bbox_normalized,five seeds
+Indoor,Drone,nmje,5,29.619674630502313,56.71099572521915,11.247962694935367,5,bbox_normalized,five seeds
+Outdoor,Indoor,nmje,5,4.98651089823034,9.60271574094373,1.8905324906904022,5,bbox_normalized,five seeds
+Outdoor,Drone,nmje,5,24.852192689004745,41.640655090458765,8.080911754297246,5,bbox_normalized,five seeds
+Drone,Indoor,nmje,5,94.1948406361149,127.28360917659579,14.45058500186275,5,bbox_normalized,five seeds
+Drone,Outdoor,nmje,5,104.3367589080675,120.37732216023399,7.329041815294945,5,bbox_normalized,five seeds
+Indoor,Outdoor,common_nmje,5,1.4700900658234002,15.682183008378376,5.963583901268946,5,bbox_normalized,five seeds
+Indoor,Drone,common_nmje,5,29.619674630502313,56.71099572521915,11.247962694935367,5,bbox_normalized,five seeds
+Outdoor,Indoor,common_nmje,5,5.041109150735545,9.326488522779806,1.7616719138965489,5,bbox_normalized,five seeds
+Outdoor,Drone,common_nmje,5,24.852192689004745,41.640655090458765,8.080911754297246,5,bbox_normalized,five seeds
+Drone,Indoor,common_nmje,5,94.61624645972573,128.34170034761084,14.449574954670826,5,bbox_normalized,five seeds
+Drone,Outdoor,common_nmje,5,104.33759422807103,119.95121917918566,7.163658462357278,5,bbox_normalized,five seeds
+Indoor,Outdoor,nmje,5,11.821600879121771,23.788806929285553,5.836118438147596,5,bbox_normalized,size-matched (50% of Indoor/Outdoor groups)
+Indoor,Drone,nmje,5,44.6286439367169,73.83344396378082,12.409786740373203,5,bbox_normalized,size-matched (50% of Indoor/Outdoor groups)
+Outdoor,Indoor,nmje,5,-17.4387255927163,-5.924255766049116,4.605154498379098,0,bbox_normalized,size-matched (50% of Indoor/Outdoor groups)
+Outdoor,Drone,nmje,5,23.941945684963677,52.79895305984939,12.623265154938865,5,bbox_normalized,size-matched (50% of Indoor/Outdoor groups)
+Drone,Indoor,nmje,5,32.85985644560176,82.11602689440446,18.322768382435243,5,bbox_normalized,size-matched (50% of Indoor/Outdoor groups)
+Drone,Outdoor,nmje,5,79.45314487549126,93.29857939203674,5.3395158199893356,5,bbox_normalized,size-matched (50% of Indoor/Outdoor groups)
+Indoor,Outdoor,common_nmje,5,11.494001228465418,23.777449989218987,5.898573627963215,5,bbox_normalized,size-matched (50% of Indoor/Outdoor groups)
+Indoor,Drone,common_nmje,5,44.6286439367169,73.83344396378082,12.409786740373203,5,bbox_normalized,size-matched (50% of Indoor/Outdoor groups)
+Outdoor,Indoor,common_nmje,5,-17.38724950776689,-6.002307656757681,4.54943494540388,0,bbox_normalized,size-matched (50% of Indoor/Outdoor groups)
+Outdoor,Drone,common_nmje,5,23.941945684963677,52.79895305984939,12.623265154938865,5,bbox_normalized,size-matched (50% of Indoor/Outdoor groups)
+Drone,Indoor,common_nmje,5,33.203448465015846,83.04442333024593,18.474822340140044,5,bbox_normalized,size-matched (50% of Indoor/Outdoor groups)
+Drone,Outdoor,common_nmje,5,79.45278975170612,92.93865112095278,5.176886953636114,5,bbox_normalized,size-matched (50% of Indoor/Outdoor groups)
+Indoor,Outdoor,nmje,6,1.9924638228413893,16.140094629640746,5.8113068271917365,6,bbox_normalized,"group rotation (6 folds, seed 42)"
+Indoor,Drone,nmje,6,30.379024432602854,65.72617762595345,12.213895232850025,6,bbox_normalized,"group rotation (6 folds, seed 42)"
+Outdoor,Indoor,nmje,6,-0.5534972579165817,4.962524931642104,1.9081115195154055,5,bbox_normalized,"group rotation (6 folds, seed 42)"
+Outdoor,Drone,nmje,6,26.152028247835354,53.78223676411394,10.72320459205177,6,bbox_normalized,"group rotation (6 folds, seed 42)"
+Drone,Indoor,nmje,6,106.04472360047323,135.57392590242716,10.640970273257555,6,bbox_normalized,"group rotation (6 folds, seed 42)"
+Drone,Outdoor,nmje,6,106.70049697666731,159.83424582015942,17.101139954383463,6,bbox_normalized,"group rotation (6 folds, seed 42)"
+Indoor,Outdoor,common_nmje,6,1.969167455432453,16.306720682694596,5.840776982247208,6,bbox_normalized,"group rotation (6 folds, seed 42)"
+Indoor,Drone,common_nmje,6,30.379024432602854,65.72617762595345,12.213895232850025,6,bbox_normalized,"group rotation (6 folds, seed 42)"
+Outdoor,Indoor,common_nmje,6,-0.6026156678106247,4.849285912690105,1.943296631660722,5,bbox_normalized,"group rotation (6 folds, seed 42)"
+Outdoor,Drone,common_nmje,6,26.152028247835354,53.78223676411394,10.72320459205177,6,bbox_normalized,"group rotation (6 folds, seed 42)"
+Drone,Indoor,common_nmje,6,105.29901946972039,137.12143600000894,11.623808059652761,6,bbox_normalized,"group rotation (6 folds, seed 42)"
+Drone,Outdoor,common_nmje,6,107.22051307244219,160.7304080430624,17.30223739736582,6,bbox_normalized,"group rotation (6 folds, seed 42)"
+Indoor,Outdoor,nmje,5,9.630657603773368,15.890664018753744,2.6517872477425097,5,scale_normalized,five seeds
+Indoor,Drone,nmje,5,-12.583426843839488,-0.8285411906627626,4.937291646273859,0,scale_normalized,five seeds
+Outdoor,Indoor,nmje,5,3.6849752916258884,17.279295393577083,5.481397228296155,5,scale_normalized,five seeds
+Outdoor,Drone,nmje,5,-25.285190058056546,-7.258861660484762,6.876169292811822,0,scale_normalized,five seeds
+Drone,Indoor,nmje,5,16.921584875338894,30.12518349151284,5.905605437634146,5,scale_normalized,five seeds
+Drone,Outdoor,nmje,5,15.324202583171385,20.87669363052088,2.4434368292449338,5,scale_normalized,five seeds
+Indoor,Outdoor,common_nmje,5,9.370666514994749,15.762296220369606,2.7103455722720953,5,scale_normalized,five seeds
+Indoor,Drone,common_nmje,5,-12.583426843839488,-0.8285411906627626,4.937291646273859,0,scale_normalized,five seeds
+Outdoor,Indoor,common_nmje,5,3.5259048927708148,17.114495671218545,5.456971680231628,5,scale_normalized,five seeds
+Outdoor,Drone,common_nmje,5,-25.285190058056546,-7.258861660484762,6.876169292811822,0,scale_normalized,five seeds
+Drone,Indoor,common_nmje,5,16.83390201106022,30.312538076495006,6.012159628985964,5,scale_normalized,five seeds
+Drone,Outdoor,common_nmje,5,15.354239178089127,20.800230496884456,2.437999345690038,5,scale_normalized,five seeds
+Indoor,Outdoor,nmje,5,15.471182802983128,23.548482236657662,3.065074964898488,5,scale_normalized,size-matched (50% of Indoor/Outdoor groups)
+Indoor,Drone,nmje,5,12.880238715465477,25.921031295906072,5.031066075119405,5,scale_normalized,size-matched (50% of Indoor/Outdoor groups)
+Outdoor,Indoor,nmje,5,-1.88932000940651,2.8598582622042645,1.716427267676045,4,scale_normalized,size-matched (50% of Indoor/Outdoor groups)
+Outdoor,Drone,nmje,5,-13.58273956089188,4.331994604989477,7.2480899010238975,2,scale_normalized,size-matched (50% of Indoor/Outdoor groups)
+Drone,Indoor,nmje,5,1.6737985221889475,9.623967650021669,3.4985781069108826,5,scale_normalized,size-matched (50% of Indoor/Outdoor groups)
+Drone,Outdoor,nmje,5,-4.90636658725908,3.7878351783622537,3.905136402937502,2,scale_normalized,size-matched (50% of Indoor/Outdoor groups)
+Indoor,Outdoor,common_nmje,5,15.203763682503418,23.384319936520004,3.1175675565183756,5,scale_normalized,size-matched (50% of Indoor/Outdoor groups)
+Indoor,Drone,common_nmje,5,12.880238715465477,25.921031295906072,5.031066075119405,5,scale_normalized,size-matched (50% of Indoor/Outdoor groups)
+Outdoor,Indoor,common_nmje,5,-2.134705324352314,2.718374497087686,1.7699044797265675,4,scale_normalized,size-matched (50% of Indoor/Outdoor groups)
+Outdoor,Drone,common_nmje,5,-13.58273956089188,4.331994604989477,7.2480899010238975,2,scale_normalized,size-matched (50% of Indoor/Outdoor groups)
+Drone,Indoor,common_nmje,5,1.5965664458815463,9.705466779341902,3.5992391474067125,5,scale_normalized,size-matched (50% of Indoor/Outdoor groups)
+Drone,Outdoor,common_nmje,5,-4.9634816702202125,3.801083699887297,3.9391101979317886,2,scale_normalized,size-matched (50% of Indoor/Outdoor groups)
+Indoor,Outdoor,nmje,6,7.305912310513394,18.792356583799382,5.216768886236299,6,scale_normalized,"group rotation (6 folds, seed 42)"
+Indoor,Drone,nmje,6,-3.5489007735577376,10.28331303162256,5.096839021056237,3,scale_normalized,"group rotation (6 folds, seed 42)"
+Outdoor,Indoor,nmje,6,3.4462578795598944,12.421074982474227,3.6331882518283134,6,scale_normalized,"group rotation (6 folds, seed 42)"
+Outdoor,Drone,nmje,6,-14.318721412989536,-8.56883773169253,2.096539316830611,0,scale_normalized,"group rotation (6 folds, seed 42)"
+Drone,Indoor,nmje,6,16.283593747342064,21.672378003205807,2.014045717575503,6,scale_normalized,"group rotation (6 folds, seed 42)"
+Drone,Outdoor,nmje,6,8.515331727155921,20.081983693975364,4.248068701193336,6,scale_normalized,"group rotation (6 folds, seed 42)"
+Indoor,Outdoor,common_nmje,6,7.521149187049004,18.687170713784305,5.129638295078188,6,scale_normalized,"group rotation (6 folds, seed 42)"
+Indoor,Drone,common_nmje,6,-3.5489007735577376,10.28331303162256,5.096839021056237,3,scale_normalized,"group rotation (6 folds, seed 42)"
+Outdoor,Indoor,common_nmje,6,3.273803945505631,12.266138904467343,3.7009838546558984,6,scale_normalized,"group rotation (6 folds, seed 42)"
+Outdoor,Drone,common_nmje,6,-14.318721412989536,-8.56883773169253,2.096539316830611,0,scale_normalized,"group rotation (6 folds, seed 42)"
+Drone,Indoor,common_nmje,6,16.297102058011394,21.427798901166817,1.9420394639288194,6,scale_normalized,"group rotation (6 folds, seed 42)"
+Drone,Outdoor,common_nmje,6,8.80498018032144,20.060527802359168,4.173899282482264,6,scale_normalized,"group rotation (6 folds, seed 42)"

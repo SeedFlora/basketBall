@@ -1,0 +1,9 @@
+factor,level,aggregation,pose_mean_nmje_mean,pose_mean_nmje_sd,poses_min,poses_max,seeds
+masked distal target,no,macro over within-domain strata,0.04918329932327871,0.0022657788420756626,127,143,5
+masked distal target,yes,macro over within-domain strata,0.07710914759916773,0.0023099200848339945,260,276,5
+player scale (within-domain tertile),large,macro over within-domain strata,0.06319223970854639,0.0014731996305302423,135,135,5
+player scale (within-domain tertile),medium,macro over within-domain strata,0.06614198492391184,0.0024533305054226314,133,133,5
+player scale (within-domain tertile),small,macro over within-domain strata,0.07390834189552757,0.00419761128309721,135,135,5
+same-frame overlap (Indoor only),high,Indoor only,0.0974083546304237,0.008365586375265157,22,22,5
+same-frame overlap (Indoor only),low,Indoor only,0.06910178130487961,0.003972527169063797,91,91,5
+same-frame overlap (Indoor only),moderate,Indoor only,0.07051987888387037,0.01853244251039101,6,6,5
